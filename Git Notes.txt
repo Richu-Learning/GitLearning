@@ -35,7 +35,29 @@ Eg:
 $ ssh-add ~/.ssh/id_rsa
 Identity added: /c/Users/Richu Andrews/.ssh/id_rsa (richuanivelil@gmail.com)
 
-Later add this value from id_rsa in github account in settings -> add ssh key
+Later add this value from id_rsa mp file from our local to github account in settings -> add ssh key
+
+
+git init -> command is used to initilize our local directory as a local git repo.  ie working area.
+
+git status -> command is used to check the uncommited changes happens to our local repo.
+
+git add . ->  command is used to make all files tracked.{Stage area/staged files}
+
+git commit -m "message" -> command is used to save all the changes added. before pushing we have to commit our changes.
+
+git remote add origin "path from github"  -> used to set the target repo of our push.
+
+git remote -v  -> command for verifiying the push and pull path by displaying.
+
+git push -u origin master  -> push the changes to repo.
+
+
+
+
+
+
+
 
 
 
