@@ -92,14 +92,6 @@ After Creating new branch to reflect in git hub we need to push.
 git push origin "branch name".
 
 
-
-push to main
-
-
-
-
-
-
 Guidances:
 
 Before pulling from remote repo our local repo should be commited of all the changes.
