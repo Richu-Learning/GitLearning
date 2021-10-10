@@ -50,7 +50,9 @@ git remote add origin "path from github"  -> used to set the target repo of our 
 
 git remote -v  -> command for verifiying the push and pull path by displaying.
 
-git push -u origin master  -> push the changes to repo.
+git push -u origin master  -> command is for push the changes to repo.
+
+git clone "repourl"  -> command is for download the code from another repo to our local repo.
 
 
 
