@@ -68,6 +68,25 @@ git commit --amend  -> command to change the last commit message. {it will open 
 git log  --> command will show the logs of the enitire commit history.
 
 
+BRANCHES:
+
+git branch  -> command list all the branches under our main repo.
+
+git branch "branch name"  -> command to create new branch.
+
+git checkout "branchname"  -> commnd to switch to another branch.
+
+git branch -d "branch name"  -> command to delete a branch
+
+git checkout -b "branch name" -> command to create new branch and switch to it.
+
+
+git push origin --delete "branch name"   -> command to delete branch if we pushed anything to the branch.
+
+After Creating new branch to reflect in git hub we need to push.
+git push origin "branch name".
+
+
 
 
 
