@@ -41,7 +41,7 @@ Later add this value from id_rsa mp file from our local to github account in set
 git init -> command is used to initilize our local directory as a local git repo.  ie working area.   it will have .git folder if we want to check
 			if it is a working area or not.
 
-git status -> command is used to check the uncommited/untracked changes happens to our local repo since last commit.
+git status -> command is used to check the uncommited/untracked changes happens to our local repo since last commit  {it will show the file names tht edited,  git diff will show content}.
 
 git add . ->  command is used to make all files tracked.{Stage area/staged files}
 
@@ -56,6 +56,11 @@ git push -u origin master  -> push the changes to repo.
 git clone "repourl"  -> command is for download the code from another repo to our local repo.
 
 git remote add upstream "upstreamrepourl" -> command to set upstream (up[stream is where the updated code si/ the main repo).
+
+git diff  -> command shows the difference made in our working area.
+
+git restore --staged "file name"   --> command used to undo the previos git add {if space in file name use double quotes}
+
 
 
 
