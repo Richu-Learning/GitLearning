@@ -61,6 +61,14 @@ git diff  -> command shows the difference made in our working area.
 
 git restore --staged "file name"   --> command used to undo the previos git add {if space in file name use double quotes}
 
+git restore "file name"   -> command used to get the previously commited file ie undo all the changes after last commit on the file.
+
+git commit --amend  -> command to change the last commit message. {it will open a editble file we have to change the message there}.
+
+git log  --> command will show the logs of the enitire commit history.
+
+
+
 
 
 
