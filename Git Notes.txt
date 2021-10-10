@@ -67,6 +67,8 @@ git commit --amend  -> command to change the last commit message. {it will open 
 
 git log  --> command will show the logs of the enitire commit history.
 
+git pull upstream master  -> command to pull from upstream repo. {main repo we configured}
+
 
 BRANCHES:
 
@@ -100,10 +102,6 @@ After making/coding we will push the changes to our forked repo.
 And to make changes in org repo we will make a pull request/PR's and admin will verify/review our changes and push it to org main repo.
 
 
-
-
-
-hhhhhhhhhhhhhhhhhhh
 
 
 
