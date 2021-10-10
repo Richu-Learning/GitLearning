@@ -102,6 +102,9 @@ After making/coding we will push the changes to our forked repo.
 And to make changes in org repo we will make a pull request/PR's and admin will verify/review our changes and push it to org main repo.
 
 
+After made changes we need to raise a pull request to merge to main organization repo then authorized person will validte and merge it.
+
+
 
 
 
