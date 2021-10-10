@@ -38,9 +38,10 @@ Identity added: /c/Users/Richu Andrews/.ssh/id_rsa (richuanivelil@gmail.com)
 Later add this value from id_rsa mp file from our local to github account in settings -> add ssh key
 
 
-git init -> command is used to initilize our local directory as a local git repo.  ie working area.
+git init -> command is used to initilize our local directory as a local git repo.  ie working area.   it will have .git folder if we want to check
+			if it is a working area or not.
 
-git status -> command is used to check the uncommited changes happens to our local repo.
+git status -> command is used to check the uncommited/untracked changes happens to our local repo since last commit  {it will show the file names tht edited,  git diff will show content}.
 
 git add . ->  command is used to make all files tracked.{Stage area/staged files}
 
@@ -52,9 +53,55 @@ git remote -v  -> command for verifiying the push and pull path by displaying.
 
 git push -u origin master  -> push the changes to repo.
 
+git clone "repourl"  -> command is for download the code from another repo to our local repo.
+
+git remote add upstream "upstreamrepourl" -> command to set upstream (up[stream is where the updated code si/ the main repo).
+
+git diff  -> command shows the difference made in our working area.
+
+git restore --staged "file name"   --> command used to undo the previos git add {if space in file name use double quotes}
+
+git restore "file name"   -> command used to get the previously commited file ie undo all the changes after last commit on the file.
+
+git commit --amend  -> command to change the last commit message. {it will open a editble file we have to change the message there}.
+
+git log  --> command will show the logs of the enitire commit history.
+
+git pull upstream master  -> command to pull from upstream repo. {main repo we configured}
 
 
-hhhhhhhhhhhhhhhhhhh
+BRANCHES:
+
+git branch  -> command list all the branches under our main repo.
+
+git branch "branch name"  -> command to create new branch.
+
+git checkout "branchname"  -> commnd to switch to another branch.
+
+git branch -d "branch name"  -> command to delete a branch
+
+git checkout -b "branch name" -> command to create new branch and switch to it.
+
+
+git push origin --delete "branch name"   -> command to delete branch if we pushed anything to the branch.
+
+After Creating new branch to reflect in git hub we need to push.
+git push origin "branch name".
+
+
+
+
+
+
+Guidances:
+
+Before pulling from remote repo our local repo should be commited of all the changes.
+
+At organization level we will fork the min repo to our user profile then clone it to the local.
+After making/coding we will push the changes to our forked repo.
+And to make changes in org repo we will make a pull request/PR's and admin will verify/review our changes and push it to org main repo.
+
+
 
 
 
