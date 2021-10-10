@@ -51,7 +51,9 @@ git remote add origin "path from github"  -> used to set the target repo of our 
 
 git remote -v  -> command for verifiying the push and pull path by displaying.
 
-git push -u origin master  -> push the changes to repo.
+git push -u origin master  -> command is for push the changes to repo.
+
+git clone "repourl"  -> command is for download the code from another repo to our local repo.
 
 git clone "repourl"  -> command is for download the code from another repo to our local repo.
 
@@ -103,12 +105,4 @@ And to make changes in org repo we will make a pull request/PR's and admin will 
 
 
 After made changes we need to raise a pull request to merge to main organization repo then authorized person will validte and merge it.
-
-
-
-
-
-
-
-
 
