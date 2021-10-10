@@ -38,9 +38,10 @@ Identity added: /c/Users/Richu Andrews/.ssh/id_rsa (richuanivelil@gmail.com)
 Later add this value from id_rsa mp file from our local to github account in settings -> add ssh key
 
 
-git init -> command is used to initilize our local directory as a local git repo.  ie working area.
+git init -> command is used to initilize our local directory as a local git repo.  ie working area.   it will have .git folder if we want to check
+			if it is a working area or not.
 
-git status -> command is used to check the uncommited changes happens to our local repo.
+git status -> command is used to check the uncommited/untracked changes happens to our local repo since last commit.
 
 git add . ->  command is used to make all files tracked.{Stage area/staged files}
 
@@ -53,6 +54,16 @@ git remote -v  -> command for verifiying the push and pull path by displaying.
 git push -u origin master  -> push the changes to repo.
 
 git clone "repourl"  -> command is for download the code from another repo to our local repo.
+
+git remote add upstream "upstreamrepourl" -> command to set upstream (up[stream is where the updated code si/ the main repo).
+
+
+
+Guidances:
+
+At organization level we will fork the min repo to our user profile then clone it to the local.
+After making/coding we will push the changes to our forked repo.
+And to make changes in org repo we will make a pull request/PR's and admin will verify/review our changes and push it to org main repo.
 
 
 
