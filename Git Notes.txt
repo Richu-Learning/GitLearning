@@ -69,7 +69,8 @@ git commit --amend  -> command to change the last commit message. {it will open 
 
 git log  --> command will show the logs of the enitire commit history.
 
-git pull upstream master  -> command to pull from upstream repo. {main repo we configured}
+git pull upstream master  -> command to pull from upstream repo master. {main repo we configured} by default
+							it will pull from forked repo if we didnt mention upstream
 
 
 BRANCHES:
@@ -89,6 +90,10 @@ git push origin --delete "branch name"   -> command to delete branch if we pushe
 
 After Creating new branch to reflect in git hub we need to push.
 git push origin "branch name".
+
+
+
+push to main
 
 
 
