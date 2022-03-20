@@ -69,7 +69,8 @@ git commit --amend  -> command to change the last commit message. {it will open 
 
 git log  --> command will show the logs of the enitire commit history.
 
-git pull upstream master  -> command to pull from upstream repo. {main repo we configured}
+git pull upstream master  -> command to pull from upstream repo master. {main repo we configured} by default
+							it will pull from forked repo if we didnt mention upstream
 
 
 BRANCHES:
@@ -91,10 +92,6 @@ After Creating new branch to reflect in git hub we need to push.
 git push origin "branch name".
 
 
-
-
-
-
 Guidances:
 
 Before pulling from remote repo our local repo should be commited of all the changes.
@@ -105,80 +102,3 @@ And to make changes in org repo we will make a pull request/PR's and admin will 
 
 
 After made changes we need to raise a pull request to merge to main organization repo then authorized person will validte and merge it.
-
-***if plugins not installed we wont get all options*****so make sure all plugins installed before using featurs of it.
-
-Git INtegration with Jenkins:
-Poll Scm can used to integrate git with jenkins . 
-we can use Webhook in Git{Settings->Webhook->Give URL} to integrate with Jenkins  and checkin the GIthub hooktrigger option in Jenkins
-
-
-
-For Building a Maven Project through jenkins
-In job configure:
-we have to give delete workspace(for avoiding failure by already existing files)  -> in build environment
-and in build invoke toplevel maven Targets and mention clean test install after clicking advanced. also mention location of pom.xml
-
-if we using git no need to mention the location of pom.xml in jenkins job or else we need to mention.
-
-
-
-For Deploying to tomcat/any server we need to Deploy to container plugin is needed
-
-For Pipeline view we need DeliveryPipeline plugin  and need to create delivery pipeline view
-
-DeliveryPipeline and BuildPipeLine
-DeliveryPipeline  ->need  delivery pipeline plugin
-
-BuildPipeLine  -> need Build Pipeline plugin
-
-Apart from other pipelines in jenkins pipeline we dont need to create seperate jobs and connect..here we can mention it as stages in jenkins script file
-Jenkins Pipeline:
-Scripted and Declrative Pipeline:
-Declrative: pipeline tag , can be in jenkins itself or git, use simple groovy
-Scripted: node tag, will be in jenkins, use strict groovy
-
-
-**for parallel exectution we can use "parallel" inside in steps tag
-
-Sample Declrative Scrip:
-
-pipeline {
-agent any
-	stages{
-        stage('Prepration') {
-		steps{
-                git 'https://github.com/richuandrews/jenkinsjobmaven.git'
-				}
-            }
-
-           stage('Build') {
-		   steps{
-               bat 'mvn clean test'
-			   }
-           }
-           stage('Package')
-           {
-		   steps{
-		   input("Do you want to proceed with packaging?")
-               bat 'mvn package'
-			   }
-           }
-              stage('Results')
-           {
-		   steps{
-              junit '**/target/surefire-reports/TEST-*.xml'
-                archiveArtifacts 'target/*.jar'
-				}
-           }
-		   }
-
-}
-
-
-
-
-
-
-
-
